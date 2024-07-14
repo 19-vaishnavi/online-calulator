@@ -1,0 +1,119 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.display {
+    background: #222;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.btn-light {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.btn-secondary {
+    background-color: #888;
+    border: 1px solid #777;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #eee;
+    transform: scale(1.05);
+}
+
+.btn-secondary:hover {
+    background-color: #777;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Dark theme styles */
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark .calculator {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+body.dark .display {
+    background: #000;
+    color: #fff;
+}
+
+body.dark .btn-light {
+    background-color: #555;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+body.dark .btn-secondary {
+    background-color: #666;
+    border: 1px solid #555;
+}
+
+body.dark .btn-primary {
+    background-color: #0056b3;
+    border: 1px solid #0056b3;
+}
+
+body.dark .btn:hover {
+    background-color: #666;
+}
+
+body.dark .btn-secondary:hover {
+    background-color: #555;
+}
+
+body.dark .btn-primary:hover {
+    background-color: #003d80;
+}
+
+/* History styles */
+.history {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+body.dark .history {
+    border-top: 1px solid #555;
+}
